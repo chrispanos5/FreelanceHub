@@ -7,44 +7,38 @@ Features
 - Sidebar Navigation
 - Dashboard & Profile Pages (still working on it)
 
-=================
+
 Start the app
 
 git clone <repository-url>
 cd <project-folder>
 
-=================
 Install Backend Dependencies
 
 cd backend
 npm install
 
-=================
 Create a .env file in the server directory with the following configuration:
 
 MONGODB_URI=your_mongo_connection_string
+
 JWT_SECRET=your_jwt_secret_key
 
-=================
 Start the backend
 
 npm run dev
 
-=================
 Install Frontend Dependencies
 
 cd <path-of-frontend> (mind is freelancehub)
 npm install
 
-
-=================
 Authentication
 
 Users must sign in to access the dashboard.
 Protected routes are handled using ProtectedRoute.jsx.
 The backend uses JWT (JSON Web Tokens) to authenticate users.
 
-=================
 Future Improvements
 
 Improved UI/UX
