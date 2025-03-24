@@ -1,6 +1,8 @@
 # FreelanceHub
 This is a React Dashboard with user authentication, protected routes, and a sidebar for navigation. The project includes a Node.js backend with MongoDB for storing user data and handling authentication.
 
+Made using React, Node.js, Redux, and MongoDB.
+
 Features
 - User Authentication (Sign In & Sign Up)
 - Protected Routes (Only accessible when logged in)
