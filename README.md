@@ -30,7 +30,7 @@ npm run dev
 
 Install Frontend Dependencies
 
-cd <path-of-frontend> (mine is freelancehub)
+cd path-of-frontend (mine is freelancehub)
 npm install
 
 Authentication
