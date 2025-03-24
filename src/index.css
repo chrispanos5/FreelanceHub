@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Ensure the body takes the full height of the viewport */
+}
+.front-page-container {
+  position: relative;
+  display: flex;
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  gap: 30px;
+}
+
+img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.overlay-title {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 1px;
+
+  color: #ffffff;
+  text-align: center;
+
+  /* background: rgba(0, 0, 0, 0.6); */
+  padding: 15px 30px;
+  /* border-radius: 10px; */
+
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+
+  max-width: 90%;
+  line-height: 1.2;
+}
+
+@media (max-width: 768px) {
+  .overlay-title {
+    font-size: 30px; /* Reduce font size on smaller screens */
+    padding: 10px 20px; /* Adjust padding for smaller screens */
+  }
+}
+
+.join-description {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 1.6;
+  padding: 5px 25px;
+  z-index: 1;
+  margin-bottom: 30px;
+
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+@media (max-width: 768px) {
+  .join-description {
+    font-size: 16px; /* Smaller font size on mobile */
+    padding: 0 15px; /* Adjust padding for smaller screens */
+  }
+}
+
+.front-buttons-container {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: rgb(68, 68, 173);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: darkblue;
+}

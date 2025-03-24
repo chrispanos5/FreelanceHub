@@ -1,0 +1,95 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: linear-gradient(
+    135deg,
+    rgba(236, 234, 234, 0.8),
+    rgba(40, 40, 40, 0.9)
+  );
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-sizing: border-box;
+  height: 70px;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  margin-left: 20px;
+  white-space: nowrap;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+.gradient-text {
+  background: linear-gradient(45deg, #ff7f50, #ff416c);
+  /* -webkit-background-clip: text; */
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+nav {
+  display: flex;
+  gap: 15px;
+  margin-right: 20px;
+}
+
+.nav-btn {
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  white-space: nowrap;
+}
+
+.nav-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+  color: white;
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.3);
+}
+
+.signup {
+  background: linear-gradient(45deg, #ff7f50, #ff416c);
+  border: none;
+  color: white;
+  padding: 10px 22px;
+}
+
+.signup:hover {
+  background: linear-gradient(45deg, #ff416c, #ff7f50);
+  transform: translateY(-2px);
+}
+
+/* Responsive Fix for Small Screens */
+@media (max-width: 768px) {
+  .header {
+    padding: 12px 20px;
+  }
+
+  .nav-btn {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .signup {
+    padding: 8px 18px;
+  }
+}

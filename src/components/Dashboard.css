@@ -1,0 +1,21 @@
+.dashboard {
+  display: flex;
+  min-height: 100vh;
+  background: #ffffff;
+  width: 100%;
+  color: #333;
+  margin-left: 100px;
+  overflow-y: auto;
+}
+
+.dashboard-content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.dashboard-content h1 {
+  font-size: 28px;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
