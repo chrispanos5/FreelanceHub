@@ -12,8 +12,8 @@ Features
 
 Start the app
 
-git clone <repository-url>
-cd <project-folder>
+git clone (repository-url)
+cd (project-folder)
 
 Install Backend Dependencies
 
