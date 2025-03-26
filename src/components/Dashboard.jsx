@@ -11,7 +11,7 @@ export default function Dashboard() {
       seller: "John Doe",
       price: "$50",
       rating: 4.9,
-      //add image
+      image: "/freelancers/John_Doe.jpg",
     },
     {
       id: 2,
@@ -19,7 +19,7 @@ export default function Dashboard() {
       seller: "Jane Smith",
       price: "$200",
       rating: 4.7,
-      //   image: "https://via.placeholder.com/150",
+      image: "/freelancers/Jane_Smith.jpg",
     },
     {
       id: 3,
@@ -27,7 +27,7 @@ export default function Dashboard() {
       seller: "Alex Brown",
       price: "$100",
       rating: 4.8,
-      //   image: "https://via.placeholder.com/150",
+      image: "/freelancers/Alex_Brown.jpg",
     },
     {
       id: 4,
@@ -35,7 +35,7 @@ export default function Dashboard() {
       seller: "Cait Perl",
       price: "$60",
       rating: 4.7,
-      //add image
+      image: "/freelancers/Cait_Perl.jpg",
     },
   ];
 
@@ -48,11 +48,19 @@ export default function Dashboard() {
         <div className="services-list">
           {services.map((service) => (
             <div key={service.id} className="service-card">
-              {/* eikona */}
-              <h3>{service.title}</h3>
-              <p>By {service.seller}</p>
-              <p>{service.price}</p>
-              <p>⭐ {service.rating}</p>
+              <div className="image-container">
+                <img
+                  src={service.image}
+                  alt={service.seller}
+                  className="service-image"
+                />
+              </div>
+              <div className="content-container">
+                <h3>{service.title}</h3>
+                <p>By {service.seller}</p>
+                <p>{service.price}</p>
+                <p>⭐ {service.rating}</p>
+              </div>
             </div>
           ))}
         </div>
